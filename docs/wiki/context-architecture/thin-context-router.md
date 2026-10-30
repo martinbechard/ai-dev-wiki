@@ -19,6 +19,8 @@ The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-de
 
 ## Practice Boundaries
 
+The [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json) reinforces separate routes for prompt construction, durable memory, retrieved context, and per-turn instructions. Each input needs a traceable owner and authority label before it is assembled into a request.
+
 - Keep the router short enough that it can be loaded at the start of work.
 - Point to task-specific rules, knowledge, plans, decisions, references, and archive locations instead of copying their content into the router.
 - Use the router for navigation, authority hints, and task routing.
@@ -27,6 +29,8 @@ The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-de
 - Route resumed or replacement agents to durable state and handoff summaries instead of embedding full prior trajectory in the root guidance file.
 
 ## Authoritative Sources
+
+- [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json)
 
 - [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
 
@@ -58,6 +62,8 @@ The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-de
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-29 with public harness evidence for independently routed prompt, memory, retrieval, and turn-instruction inputs.
 
 - Maintained on 2026-10-09 with harness-context routing evidence from the October 8 [leaf update watch](../source-workflows/leaf-update-watch.md).
 - Created on 2026-06-23 from the folder organization source note covering the root router file and task-specific guidance routing.

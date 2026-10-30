@@ -37,6 +37,8 @@ Portable packages should not erase artifact boundaries. [Portable agent skills a
 
 ## Practice Boundaries
 
+The [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json) reinforces that repository recommendations are not enforcement. Record the approved plugin source, whether the control is merely a default or an enforceable policy, and who owns that policy.
+
 - Verify the checked-out commit object against the intended pinned SHA after clone or checkout, and record that comparison as plugin intake evidence.
 - Apply release-age cooldowns, known-malicious package blocks, MCP server guardrails, prompt/file-read guardrails, and generated-code security checks before reusable plugins can alter agent authority.
 
@@ -57,6 +59,8 @@ Portable packages should not erase artifact boundaries. [Portable agent skills a
 - Validate inferred metadata, tool registration, hosted MCP exposure, private library provenance, batch-run caps, and package contents before treating a portable skill or plugin as reusable team infrastructure.
 
 ## Authoritative Sources
+
+- [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json)
 
 - [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
 
@@ -105,6 +109,8 @@ Portable packages should not erase artifact boundaries. [Portable agent skills a
 - Should the upstream AI wiki create a broad Agent Plugins specification entity page so this local practice leaf can link to an upstream owner?
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-29 with recommendation-versus-enforcement, approved-source, and policy-owner evidence.
 
 - Maintained on 2026-10-09 with Plugin4Shell follow-up, resolved-commit, package-source, bundled-command, allowed-tool, auto-update, and advisory-evidence checks.
 - Maintained on 2026-09-25 with post-checkout SHA verification, workstation package controls, and plugin-governance evidence.

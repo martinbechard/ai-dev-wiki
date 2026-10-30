@@ -35,6 +35,8 @@ This page owns performance-specific acceptance. [Trajectory-level agent evaluati
 
 ## Practice Boundaries
 
+The [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json) reinforces independence of optimization gates: baseline selection, acceptance criteria, and final approval must not inherit the optimization agent's framing.
+
 - Require a baseline, one-variable change record, quality gate, and rollback path before accepting cost or latency improvements from agent workflow optimization.
 - Track review and correction effort as part of optimization evidence when generated code increases reviewer toil or compliance-review load.
 - Keep advisory AI-scan coverage, findings, remediation follow-through, and credit use observable without promoting the scan to an acceptance gate.
@@ -58,6 +60,8 @@ This page owns performance-specific acceptance. [Trajectory-level agent evaluati
 - Accept model-route speed or performance claims only with representative terminal-task validation, actionable-failure recovery, workflow-fit evidence, and model-policy eligibility.
 
 ## Authoritative Sources
+
+- [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json)
 
 - [October 15 leaf update watch source](../../../raw/processed/2026-10-15/ai-dev-wiki-leaf-update-watch-2026-10-15T205735-0400.json)
 - [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
@@ -100,6 +104,8 @@ This page owns performance-specific acceptance. [Trajectory-level agent evaluati
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-29 with independent baseline, acceptance-criteria, and final-approval evidence.
 
 - Maintained on 2026-10-15 with advisory AI-scan coverage, finding, remediation, credit-use, retrieval-coverage, and source-quote evidence.
 - Maintained on 2026-10-09 with RAG optimizer, benchmark-category, token-cost, latency, and accepted-quality evidence.

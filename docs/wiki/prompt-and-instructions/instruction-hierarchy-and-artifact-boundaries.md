@@ -70,6 +70,8 @@ The [October 14 topic news collector source](../../../raw/processed/2026-10-14/a
 
 ## Practice Boundaries
 
+The [October 30 topic news collector source](../../../raw/processed/2026-10-30/ai-dev-wiki-topic-news-collector-2026-10-30T002936Z.json) reinforces that durable instructions need an explicit, reviewable authority hierarchy. Resolve conflicts visibly, label contextual evidence separately from instructions, expose assumptions that shape intent, and communicate material uncertainty or side effects; a written specification is not proof of runtime compliance.
+
 - Put durable coding standards in repository instructions or procedure files when they apply across tasks.
 - Use reusable prompts for repeatable workflow entry points that still need a human-selected goal.
 - Use agent definitions for role, task class, tool posture, and stopping behavior.
@@ -116,6 +118,8 @@ The [October 14 topic news collector source](../../../raw/processed/2026-10-14/a
 - Preserve source labels, authority labels, owner review, and tool-access boundaries when packaging repository context for coding agents.
 
 ## Authoritative Sources
+
+- [October 30 topic news collector source](../../../raw/processed/2026-10-30/ai-dev-wiki-topic-news-collector-2026-10-30T002936Z.json)
 
 - [October 27 topic news collector source](../../../raw/processed/2026-10-27/ai-dev-wiki-topic-news-collector-2026-10-27T003431Z.json)
 
@@ -178,6 +182,8 @@ The [October 14 topic news collector source](../../../raw/processed/2026-10-14/a
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-30 with instruction-authority, context-evidence, conflict-resolution, uncertainty, and side-effect communication guidance from an upstream-owned Model Spec update.
 
 - Maintained on 2026-10-27 with untrusted-location intake and Git-governed configuration guidance from the October 27 topic collector.
 

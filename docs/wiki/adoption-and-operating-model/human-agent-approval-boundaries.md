@@ -93,6 +93,8 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Practice Boundaries
 
+The [October 30 topic news collector source](../../../raw/processed/2026-10-30/ai-dev-wiki-topic-news-collector-2026-10-30T002936Z.json) reinforces that human authorization remains explicit for consequential actions. Agents should surface uncertainty and foreseeable side effects for the approver; an intended-behavior specification does not substitute for reviewable runtime controls.
+
 - Define approval policy separately for commands, file paths, URLs, and session defaults; record the enterprise control that permits, blocks, or requires human confirmation for each boundary.
 - Preserve manual approval as the fallback whenever a requested action is prohibited, ambiguous, or outside an available policy-constrained default.
 - Define which tasks can be delegated, which require review, and which require human execution.
@@ -151,6 +153,8 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 - Record unattended-continuation scope, app or tool allowlist, acting identity, delegated mandate, checkpoint trigger, and return-to-human condition when agents can keep working across sessions, desktops, or connected tools.
 
 ## Authoritative Sources
+
+- [October 30 topic news collector source](../../../raw/processed/2026-10-30/ai-dev-wiki-topic-news-collector-2026-10-30T002936Z.json)
 
 - [October 28 topic news collector source](../../../raw/processed/2026-10-28/ai-dev-wiki-topic-news-collector-2026-10-28T003023Z.json)
 - [October 23 leaf update watch source](../../../raw/processed/2026-10-23/ai-dev-wiki-leaf-update-watch-2026-10-23T210320-0400.json)
@@ -235,6 +239,8 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-30 with explicit human authorization, uncertainty, side-effect, and runtime-control guidance.
 
 - Maintained on 2026-10-27 with policy-defined command, path, URL, session-default, and manual-approval boundaries from the October 28 raw source.
 - Maintained on 2026-10-23 with remote-agent identity, scoped authorization, guardrail, and evaluation-evidence boundaries.

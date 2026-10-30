@@ -38,6 +38,8 @@ The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-de
 
 ## Practice Boundaries
 
+The [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json) adds an independence check: retain comparison runs and evidence gathered before an agent recommendation influences the reviewer's diagnosis. Record that influence when it affects incident or eval interpretation.
+
 - Include knowledge-gap canaries or absence tests when diagnosing retrieval-backed agents so fabrication and failure-to-abstain become visible.
 - Separate inadequate evaluation-set coverage, missing source evidence, semantic-validity failure, and retrieval failure before changing a retrieval-backed agent.
 - Join traceable tool authorization, completed-task evaluation, reliability, latency, cost, and quality signals before attributing a failure only to model reasoning.
@@ -54,6 +56,8 @@ The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-de
 - Locate the first consequential divergence in an end-to-end trace before adding broader logging, prompt changes, or model-routing changes.
 
 ## Authoritative Sources
+
+- [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json)
 
 - [October 15 leaf update watch source](../../../raw/processed/2026-10-15/ai-dev-wiki-leaf-update-watch-2026-10-15T205735-0400.json)
 - [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json)
@@ -92,6 +96,8 @@ The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-de
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-29 with independent-comparison and recommendation-influence diagnosis evidence.
 
 - Maintained on 2026-10-15 with coverage-guided eval-set, deterministic source-quote, semantic-validity, and retrieval-failure-separation evidence; CoverSynth remains research evidence rather than production validation.
 - Maintained on 2026-10-10 with technology-readiness eval, trajectory-inspection, failure-pattern, and source-fix-loop evidence.

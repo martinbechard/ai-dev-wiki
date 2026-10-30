@@ -29,6 +29,8 @@ The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai
 
 ## Practice Boundaries
 
+The [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json) reinforces that cross-client agent work still needs independent human or automated review and ordinary repository checks before acceptance.
+
 - Require a synthesis step that merges duplicate findings, preserves meaningful disagreement, and explains which reviewer signal should drive human attention.
 - Measure multi-reviewer review against false positives, developer action, correction time, and compliance-review load instead of counting findings as success.
 
@@ -42,6 +44,8 @@ The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai
 - Route reusable role taxonomies through [layered AI code review roles](layered-ai-code-review-roles.md) and evaluation criteria through [code review evals and rubrics](../verification-and-evals/code-review-evals-and-rubrics.md).
 
 ## Authoritative Sources
+
+- [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json)
 
 - [October 15 leaf update watch source](../../../raw/processed/2026-10-15/ai-dev-wiki-leaf-update-watch-2026-10-15T205735-0400.json)
 - [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
@@ -77,6 +81,8 @@ The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-29 with cross-client session and independent-review evidence.
 
 - Maintained on 2026-10-15 with advisory AI security-scan, scope-coverage, suggested-fix, credit-use, and human-triage evidence.
 - Maintained on 2026-10-09 with automated-finding, weekly-review, source-statistic, sensitive-code-boundary, and human-acceptance evidence.

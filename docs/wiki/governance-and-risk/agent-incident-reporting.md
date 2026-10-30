@@ -29,6 +29,8 @@ An agent incident record should distinguish the observed behavior from speculati
 
 ## Practice Boundaries
 
+The [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json) adds a judgment-influence field: incident review should state whether agent output shaped the initial human assessment and preserve an independent evidence path.
+
 - Include runtime-control state, autonomy tier, escalation path, immutable action record, data perimeter, cost boundary, and containment outcome in incident packets.
 - Treat failed package cooldowns, malicious package blocks, MCP guardrail failures, and prompt/file-read guardrail failures as reportable agentic-development incidents when they expose code, credentials, or generated changes.
 
@@ -43,6 +45,8 @@ An agent incident record should distinguish the observed behavior from speculati
 - Route broad model-provider safety claims to the upstream AI wiki; keep this page focused on local coding-agent and automation incident practice.
 
 ## Authoritative Sources
+
+- [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json)
 
 - [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-01T210310-0400.json)
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
@@ -78,6 +82,8 @@ An agent incident record should distinguish the observed behavior from speculati
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-29 with independent-evidence and agent-influence incident-review guidance.
 
 - Maintained on 2026-10-02 with misaligned-agent web activity, third-party notification, survey-audit, destructive-file-operation, and negative-finding incident evidence.
 - Maintained on 2026-09-25 with runtime-control, autonomy-tier, containment, and workstation-package incident evidence.

@@ -63,6 +63,8 @@ The [October 20 topic news collector source](../../../raw/processed/2026-10-20/a
 
 ## Practice Boundaries
 
+The [October 30 topic news collector source](../../../raw/processed/2026-10-30/ai-dev-wiki-topic-news-collector-2026-10-30T002936Z.json) reinforces deliberate contextual evidence: route evidence with its source and authority, keep assumptions inspectable, and prevent context from silently overriding the reviewable instruction hierarchy.
+
 - Route procedural playbooks, raw code search, docs/wiki retrieval, runbooks, observability context, feature flags, task-system state, and data-platform tools as separate layers in enterprise codebase agents.
 
 - Keep routing, rules, knowledge, active plans, decisions, references, archives, and compaction as separate context concerns.
@@ -85,6 +87,8 @@ The [October 20 topic news collector source](../../../raw/processed/2026-10-20/a
 - Route semantic layers, enterprise knowledge graphs, and knowledge-agent outputs as governed meaning sources with permission, lineage, business-definition ownership, and freshness checks.
 
 ## Authoritative Sources
+
+- [October 30 topic news collector source](../../../raw/processed/2026-10-30/ai-dev-wiki-topic-news-collector-2026-10-30T002936Z.json)
 
 - [October 26 leaf update watch source](../../../raw/processed/2026-10-26/ai-dev-wiki-leaf-update-watch-2026-10-26T210440-0400.json)
 
@@ -134,6 +138,8 @@ The [October 20 topic news collector source](../../../raw/processed/2026-10-20/a
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-30 with context-evidence source, authority, and assumption-exposure guidance.
 
 - Maintained on 2026-10-27 with active-context, replay, and durable-record separation guidance from the October 26 leaf watch.
 

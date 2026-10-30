@@ -74,6 +74,8 @@ The [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai
 
 ## Practice Boundaries
 
+The [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json) adds a reusable-connection rule: retain the service owner, allowlist status, sign-in scope, and administrator-enablement evidence. Filesystem, command, and URL access remain separately scoped operations even when a platform classifies some actions as safe.
+
 - Preserve authenticated request, tool-call validation, approval pause, cost/quality gate, and action result evidence for MCP-mediated work.
 - Resolve OAuth consent and token refresh at the route or connector boundary before model execution; do not expose avoidable authorization failures as model-visible tool content.
 
@@ -114,6 +116,8 @@ The [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai
 - Treat cross-account or cross-resource promotion tools as high-impact MCP calls that need source, target, resource, identity, rollback, and audit evidence before execution.
 
 ## Authoritative Sources
+
+- [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json)
 
 - [October 22 leaf update watch source](../../../raw/processed/2026-10-22/ai-dev-wiki-leaf-update-watch-2026-10-22T210447-0400.json)
 - [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
@@ -172,6 +176,8 @@ The [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-29 with reusable-connection provenance and separately scoped operation evidence.
 
 - Maintained on 2026-10-22 with globally inherited MCP-setting and explicit-approval-evidence guidance.
 - Maintained on 2026-10-09 with governed-pipeline scoped-token, exact-action, approval, payload, and plugin-provenance evidence.

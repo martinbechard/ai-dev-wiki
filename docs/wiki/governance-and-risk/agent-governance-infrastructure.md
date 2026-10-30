@@ -115,6 +115,10 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 
 ## Practice Boundaries
 
+The [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json) adds a permission-control boundary: record permission mode, policy source, exceptions, and approval evidence for command, filesystem, and URL operations.
+
+The [October 30 topic news collector source](../../../raw/processed/2026-10-30/ai-dev-wiki-topic-news-collector-2026-10-30T002936Z.json) reinforces that model-facing specifications describe intended behavior but still require runtime controls and verification.
+
 - Treat human-presence checks, action freshness, autonomy tier, budget limit, escalation path, containment path, and immutable decision/action records as governance infrastructure for production agents.
 - Apply workstation and local-sandbox controls to package installs, MCP servers, generated code, filesystem access, network access, Git credentials, and GitHub CLI credentials before repository changes leave the developer environment.
 - Fail closed when the host cannot enforce the requested sandbox or credential boundary.
@@ -210,6 +214,9 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 - Classify agent capability inventories by direct code-writing, qualified code-writing, no-code, and non-applicable status before using them for policy, procurement, or rollout decisions.
 
 ## Authoritative Sources
+
+- [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json)
+- [October 30 topic news collector source](../../../raw/processed/2026-10-30/ai-dev-wiki-topic-news-collector-2026-10-30T002936Z.json)
 
 - [October 27 topic news collector source](../../../raw/processed/2026-10-27/ai-dev-wiki-topic-news-collector-2026-10-27T003431Z.json)
 
@@ -320,6 +327,9 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-29 with permission-mode, policy-source, exception, and approval-evidence guidance.
+- Maintained on 2026-10-30 with specification-versus-runtime-control guidance.
 
 - Maintained on 2026-10-27 with reviewed configuration-to-run provenance guidance from the October 27 topic collector.
 

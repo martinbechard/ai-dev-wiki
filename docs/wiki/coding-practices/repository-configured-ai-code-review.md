@@ -39,6 +39,8 @@ The [October 13 topic news collector source](../../../raw/processed/2026-10-13/a
 
 ## Practice Boundaries
 
+The [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json) adds a configuration boundary: repository settings are auditable inputs to review behavior, but defaults do not prove enforcement. Preserve the approved source and independently verify the applied controls.
+
 - Keep AI-review rules, path scopes, labels, reviewer assignment, security sections, tool settings, and request-changes behavior in repository-owned or team-owned configuration.
 - Preserve the configuration version or commit that governed each generated review.
 - Distinguish human-facing findings from prompts intended for a follow-on remediation agent.
@@ -54,6 +56,8 @@ The [October 13 topic news collector source](../../../raw/processed/2026-10-13/a
 - Route general AI-review practice through [intelligent code review](intelligent-code-review.md) and review-quality measurement through [code review evals and rubrics](../verification-and-evals/code-review-evals-and-rubrics.md).
 
 ## Authoritative Sources
+
+- [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json)
 
 - [October 15 leaf update watch source](../../../raw/processed/2026-10-15/ai-dev-wiki-leaf-update-watch-2026-10-15T205735-0400.json)
 - [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json)
@@ -89,6 +93,8 @@ The [October 13 topic news collector source](../../../raw/processed/2026-10-13/a
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-29 with repository-default, enforcement, and independent-verification evidence.
 
 - Maintained on 2026-10-15 with advisory scan enablement, scope, exclusion, credit-budget, and independent merge-gate evidence.
 - Created on 2026-09-16 from raw-source evidence about repository-local AI review configuration and agent-facing review prompts; next check should verify config examples preserve reviewer authority and repository-specific rule provenance.

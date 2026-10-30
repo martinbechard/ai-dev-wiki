@@ -54,6 +54,8 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 
 ## Practice Boundaries
 
+The [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json) adds roster fields for the owner of environment defaults, policy exceptions, and approval-review obligations. Reusable connections and managed defaults do not remove accountable ownership.
+
 - Include autonomy tier, budget owner, escalation contact, containment path, workstation-control owner, and runtime-evidence location in production-agent rosters.
 - Track lead team, durable work IDs, setup-secret exposure, allowed model routes, revocation audit evidence, and comment-follow-up route for planning-system-launched coding sessions.
 - Connect dashboard-visible agent sessions, issue assignments, pull-request starts, audit-trail readiness, and incident-response ownership in the roster before treating agent queues as governed work.
@@ -84,6 +86,8 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 - Record accountable business owner, short-lived credential policy, high-risk approval gate, monitoring owner, audit cadence, and kill-switch owner for agents treated as non-human workers.
 
 ## Authoritative Sources
+
+- [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json)
 
 - [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
 
@@ -134,6 +138,8 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-29 with accountable default, exception, and approval-review ownership evidence.
 
 - Maintained on 2026-10-09 with harness-governance ownership fields from the October 8 [leaf update watch](../source-workflows/leaf-update-watch.md).
 - Maintained on 2026-10-02 with dashboard queue, issue-assignment, audit-trail readiness, and incident-ownership roster evidence.

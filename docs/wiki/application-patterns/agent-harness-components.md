@@ -103,6 +103,8 @@ The [October 17 topic news collector source](../../../raw/processed/2026-10-17/a
 
 ## Practice Boundaries
 
+The [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json) reinforces a portable harness boundary: prompt construction, tool orchestration, message persistence, streaming, recovery, and lifecycle extensions are distinct components. Keep their inputs, owners, and evidence separately inspectable rather than collapsing them into a model-selection decision.
+
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
 - Keep tool descriptors, permissions, and handlers in a registry so execution can be inspected and controlled.
 - Persist session events in an append-only form when resume, audit, or crash recovery matters.
@@ -173,6 +175,8 @@ The [October 17 topic news collector source](../../../raw/processed/2026-10-17/a
 - Keep hooks, deterministic tests, read-only reviewer agents, permission rules, and human acceptance gates inspectable as enforcement components rather than advisory prompt text.
 
 ## Authoritative Sources
+
+- [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json)
 
 - [October 27 topic news collector source](../../../raw/processed/2026-10-27/ai-dev-wiki-topic-news-collector-2026-10-27T003431Z.json)
 
@@ -277,6 +281,8 @@ The [October 17 topic news collector source](../../../raw/processed/2026-10-17/a
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-29 with component-level prompt, orchestration, persistence, streaming, recovery, and lifecycle evidence from public harness documentation; framework background remains upstream-owned.
 
 - Maintained on 2026-10-27 with reserve-execute-commit pre-action control guidance from the October 27 topic collector.
 

@@ -47,6 +47,8 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 
 ## Practice Boundaries
 
+The [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json) adds recovery evidence: set a retry budget and terminal state, attach an incident identifier, and retain observable recovery events. For resumable cloud sessions, distinguish an environment snapshot from application-level recovery evidence before another side effect.
+
 - Preserve checkpoint, fork, conversation-history, working-state, approval-policy, and credential-scope evidence before resuming a managed coding-agent session.
 - Treat pause or fork APIs as recovery surfaces that need source-of-truth state checks, not as proof that the recovered agent still has correct context.
 
@@ -69,6 +71,8 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 - After a crash, kill, or parallel-tool interruption, check turn preservation, resume target, crash markers, MCP error output, log redaction, and credential exposure before trusting the recovered session.
 
 ## Authoritative Sources
+
+- [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json)
 
 - [October 27 topic news collector source](../../../raw/processed/2026-10-27/ai-dev-wiki-topic-news-collector-2026-10-27T003431Z.json)
 
@@ -114,6 +118,8 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-29 with retry-exhaustion, terminal-state, recovery-event, and resumable-session evidence.
 
 - Maintained on 2026-10-27 with read-only resume-fence and decision-record guidance from the October 27 topic collector.
 

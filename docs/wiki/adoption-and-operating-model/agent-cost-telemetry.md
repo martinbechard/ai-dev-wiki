@@ -153,6 +153,8 @@ The October 14 raw ingest adds budget-discovery evidence for scaled agent adopti
 
 ## Practice Boundaries
 
+The [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json) adds cloud-session attribution: record the session, execution environment, entitlement meter, and accepted outcome. A shared credit balance or cross-client continuation is not productivity evidence by itself.
+
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
 - Record client-version coverage and metric gaps before comparing agent activity across teams or time windows.
 - Record local-model routing, telemetry caveats, installation/setup effort, and fallback provider calls before treating local execution as free or private by default.
@@ -240,6 +242,8 @@ The October 14 raw ingest adds budget-discovery evidence for scaled agent adopti
 - Pair benchmark scores with token, cost, error-cleanliness, static-analysis, pytest, deliverable-manifest, and transcript evidence before comparing multi-agent SDLC runs.
 
 ## Authoritative Sources
+
+- [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json)
 
 - [October 22 leaf update watch source](../../../raw/processed/2026-10-22/ai-dev-wiki-leaf-update-watch-2026-10-22T210447-0400.json)
 - [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json)
@@ -342,6 +346,8 @@ The October 14 raw ingest adds budget-discovery evidence for scaled agent adopti
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-29 with session, environment, entitlement, and accepted-outcome cost-attribution evidence.
 
 - Maintained on 2026-10-22 with opt-in peer-comparison, aggregation, residency, retention, and metric-definition evidence for adoption telemetry.
 - Maintained on 2026-10-10 with vulnerability-agent eval, success-versus-efficiency, token-spend, auxiliary-model-spend, trace-evidence, and matched-pair cost attribution.

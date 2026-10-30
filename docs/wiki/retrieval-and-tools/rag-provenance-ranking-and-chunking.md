@@ -65,6 +65,8 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 
 ## Practice Boundaries
 
+The [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json) adds connection provenance to external context: preserve the source, connection, and authority metadata before content enters a retrieval or prompt route.
+
 - Add absent-answer canaries to RAG evaluation alongside source-span attribution, ranking, chunking, and answer-quality checks.
 - Design retrieval eval sets to expose corpus coverage and inspectable source quotes, then use semantic checks as a bounded complement rather than a replacement for provenance.
 - Diagnose RAG failures by checking source-span availability, top-result presence, groundedness, and final-answer correctness as separate classes.
@@ -102,6 +104,8 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 - Budget codebase-RAG evals for resolvable citation checks, source-span verification, and harness-bug discovery before accepting token-savings claims.
 
 ## Authoritative Sources
+
+- [October 29 leaf update watch source](../../../raw/processed/2026-10-29/ai-dev-wiki-leaf-update-watch-2026-10-29T205845-0400.json)
 
 - [October 22 leaf update watch source](../../../raw/processed/2026-10-22/ai-dev-wiki-leaf-update-watch-2026-10-22T210447-0400.json)
 - [October 15 leaf update watch source](../../../raw/processed/2026-10-15/ai-dev-wiki-leaf-update-watch-2026-10-15T205735-0400.json)
@@ -155,6 +159,8 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-29 with external-context source, connection, and authority metadata guidance.
 
 - Maintained on 2026-10-22 with restricted-deployment locality, execution-boundary, and external-dependency provenance guidance.
 - Maintained on 2026-10-15 with coverage-guided retrieval-eval, deterministic source-quote, semantic-validity, and provenance evidence; CoverSynth remains research evidence rather than production validation.
