@@ -1,0 +1,161 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-10-29T20:58:45-0400",
+  "cutoff_window": {
+    "start_exclusive": "2026-10-22T20:58:45-0400",
+    "end_inclusive": "2026-10-29T20:58:45-0400",
+    "rule": "Only public sources with a visible publication or update date strictly after the start and no later than the end qualify."
+  },
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+    "docs/wiki/application-patterns/agent-harness-components.md",
+    "docs/wiki/application-patterns/agent-session-recovery.md",
+    "docs/wiki/coding-practices/multi-reviewer-ai-code-review.md",
+    "docs/wiki/coding-practices/repository-configured-ai-code-review.md",
+    "docs/wiki/context-architecture/thin-context-router.md",
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+    "docs/wiki/governance-and-risk/agent-incident-reporting.md",
+    "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+    "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md",
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+    "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md",
+    "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+    "docs/wiki/verification-and-evals/agent-eval-failure-diagnosis.md"
+  ],
+  "source_urls_checked": [
+    "https://developers.cloudflare.com/agents/harnesses/",
+    "https://developers.cloudflare.com/agents/harnesses/think/recovery/",
+    "https://github.blog/changelog/2026-10-26-github-copilot-assisted-permissions-generally-available/",
+    "https://github.blog/changelog/2026-10-28-connect-your-tools-to-copilot-without-all-the-setup/",
+    "https://github.blog/changelog/2026-10-28-github-copilot-in-vs-code-universe-releases/",
+    "https://github.blog/changelog/2026-10-28-work-from-anywhere-with-a-new-connected-copilot-cloud-experience/",
+    "https://www.anthropic.com/research/agents-judgment-calls",
+    "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+    "https://aws.amazon.com/about-aws/whats-new/2026/07/cloudwatch-coding-agent-insights/",
+    "https://cloud.google.com/blog/topics/hybrid-cloud/managed-rag-search-inside-the-sovereign-perimeter-gemini-on-gdc-enterprise-search"
+  ],
+  "qualifying_updates": [
+    {
+      "source_url": "https://developers.cloudflare.com/agents/harnesses/",
+      "visible_date": "2026-10-29",
+      "named_entities": ["Cloudflare Agents", "Pi", "OpenCode"],
+      "upstream_owned_entities": ["Cloudflare Agents", "Pi", "OpenCode"],
+      "factual_summary": "The public harness documentation was updated October 29 and describes a harness as owning prompt construction, model and tool orchestration, message persistence, streaming, recovery, and lifecycle extension points.",
+      "leaf_implications": {
+        "docs/wiki/application-patterns/agent-harness-components.md": "Keep the local component inventory explicit and independently inspectable; do not reduce harness architecture to model selection.",
+        "docs/wiki/context-architecture/thin-context-router.md": "Treat prompt construction, memory, retrieved context, and per-turn instructions as separately routed inputs with traceable ownership."
+      },
+      "follow_up_note": "Ingest only the local component and routing implications; framework background remains upstream-owned."
+    },
+    {
+      "source_url": "https://developers.cloudflare.com/agents/harnesses/think/recovery/",
+      "visible_date": "2026-10-27",
+      "named_entities": ["Cloudflare Think", "Durable Objects"],
+      "upstream_owned_entities": ["Cloudflare Think", "Durable Objects"],
+      "factual_summary": "The public recovery page was updated October 27 and documents bounded recovery, retry exhaustion, terminal behavior, and recovery-event observability.",
+      "leaf_implications": {
+        "docs/wiki/application-patterns/agent-session-recovery.md": "A recoverable session needs an explicit retry budget, terminal state, incident identifier, and observable recovery events.",
+        "docs/wiki/application-patterns/agent-harness-components.md": "Recovery, persistence, and observability should remain separate harness components with evidence rather than implicit reliability claims."
+      },
+      "follow_up_note": "Use as public practice evidence only; no framework-specific local page is warranted."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-10-26-github-copilot-assisted-permissions-generally-available/",
+      "visible_date": "2026-10-26",
+      "named_entities": ["GitHub Copilot", "GitHub Copilot CLI", "Visual Studio Code"],
+      "upstream_owned_entities": ["GitHub Copilot", "GitHub Copilot CLI", "Visual Studio Code"],
+      "factual_summary": "GitHub announced assisted permissions on October 26: classified safe actions may proceed while other command, filesystem, or URL requests still require approval; enterprise policy can constrain available modes and defaults.",
+      "leaf_implications": {
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md": "Record permission mode, policy source, exceptions, and approval evidence as enforceable controls rather than relying on a permissive default.",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md": "Name the owner of defaults, policy exceptions, and approval review for each agent environment.",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md": "Treat filesystem, command, and URL access as separately scoped operations with retained approval evidence."
+      },
+      "follow_up_note": "Vendor feature details belong upstream; retain only the approval and accountable-ownership practice."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-10-28-connect-your-tools-to-copilot-without-all-the-setup/",
+      "visible_date": "2026-10-28",
+      "named_entities": ["GitHub Copilot", "Model Context Protocol", "Slack", "Figma", "Sentry"],
+      "upstream_owned_entities": ["GitHub Copilot", "Model Context Protocol", "Slack", "Figma", "Sentry"],
+      "factual_summary": "GitHub announced verified MCP connectors on October 28 that can be connected once and reused across supported clients; enterprise allowlists and service-side administrator enablement can still apply.",
+      "leaf_implications": {
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md": "A reusable connection must preserve service owner, allowlist status, sign-in scope, and administrator enablement evidence.",
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md": "External context should preserve source, connection, and authority metadata before it enters a retrieval or prompt path."
+      },
+      "follow_up_note": "Do not duplicate connector or MCP product background in the downstream wiki."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-10-28-github-copilot-in-vs-code-universe-releases/",
+      "visible_date": "2026-10-28",
+      "named_entities": ["GitHub Copilot", "Visual Studio Code", "Agent Host"],
+      "upstream_owned_entities": ["GitHub Copilot", "Visual Studio Code", "Agent Host"],
+      "factual_summary": "GitHub announced October 28 repository plugin defaults and enterprise controls; repository settings can register marketplaces and defaults, while enterprise policy can require, block, or restrict named plugins and sources.",
+      "leaf_implications": {
+        "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md": "Separate repository recommendations from enforced policy, and record the approved source and enforceable control owner.",
+        "docs/wiki/coding-practices/repository-configured-ai-code-review.md": "Treat repository configuration as an auditable input to review behavior, but retain independent verification because defaults are not enforcement."
+      },
+      "follow_up_note": "Keep the local page focused on recommendation-versus-enforcement and provenance boundaries."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-10-28-work-from-anywhere-with-a-new-connected-copilot-cloud-experience/",
+      "visible_date": "2026-10-28",
+      "named_entities": ["GitHub Copilot", "GitHub Actions", "Slack", "Microsoft Teams"],
+      "upstream_owned_entities": ["GitHub Copilot", "GitHub Actions", "Slack", "Microsoft Teams"],
+      "factual_summary": "GitHub announced October 28 cloud sessions that can resume across clients, use ephemeral sandboxes with saved snapshots, draw from shared compute entitlement, and inherit managed permissions and MCP allowlists.",
+      "leaf_implications": {
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md": "Attribute cloud-agent cost by session, execution environment, entitlement meter, and accepted outcome rather than treating a pooled balance as a productivity result.",
+        "docs/wiki/application-patterns/agent-session-recovery.md": "A resumable session must retain a bounded recovery record and distinguish environment snapshots from application-level evidence.",
+        "docs/wiki/coding-practices/multi-reviewer-ai-code-review.md": "Cross-client agent work still requires independent review and ordinary repository checks before a change is accepted."
+      },
+      "follow_up_note": "The product announcement is upstream-owned; only portable cost, recovery, and verification implications should be ingested."
+    },
+    {
+      "source_url": "https://www.anthropic.com/research/agents-judgment-calls",
+      "visible_date": "2026-10-27",
+      "named_entities": ["Anthropic", "Claude Code"],
+      "upstream_owned_entities": ["Anthropic", "Claude Code"],
+      "factual_summary": "Anthropic published research on October 27 reporting that experts can change judgment after agent advice; the study frames independent review as weak when the reviewer's judgment is already shaped by the agent.",
+      "leaf_implications": {
+        "docs/wiki/verification-and-evals/agent-eval-failure-diagnosis.md": "Preserve independent comparison runs and evidence before attributing a failure or success to an agent recommendation.",
+        "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md": "Keep baseline selection, acceptance criteria, and final approval independent from the optimization agent's proposed framing.",
+        "docs/wiki/governance-and-risk/agent-incident-reporting.md": "Incident review should identify whether agent output influenced the initial human judgment and retain an independent evidence path."
+      },
+      "follow_up_note": "Use the research as a local independence-of-review implication, not as a broad model or company page."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "visible_date": "2026-10-15 and 2026-10-16",
+      "reason": "Outside the strict seven-day window."
+    },
+    {
+      "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/07/cloudwatch-coding-agent-insights/",
+      "visible_date": "2026-07-20",
+      "reason": "Outside the strict seven-day window."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-10-22-global-default-for-copilot-features-generally-available/",
+      "visible_date": "2026-10-22",
+      "reason": "Boundary-only date: not visibly later than the start timestamp."
+    },
+    {
+      "source_url": "https://cloud.google.com/blog/topics/hybrid-cloud/managed-rag-search-inside-the-sovereign-perimeter-gemini-on-gdc-enterprise-search",
+      "visible_date": "2026-10-20",
+      "reason": "Outside the strict seven-day window."
+    },
+    {
+      "source_url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/coding-agents-insights.html",
+      "visible_date": null,
+      "reason": "Documentation page lacked a visible update date, so it cannot qualify."
+    }
+  ],
+  "counts": {
+    "selected_leaves": 15,
+    "qualifying_updates": 7,
+    "excluded_candidates": 5
+  },
+  "overall_follow_up_note": "Raw-only watch: normal ingest should decide whether these local-practice implications warrant page changes. Broad vendor, product, framework, protocol, and research background remains upstream-owned."
+}
